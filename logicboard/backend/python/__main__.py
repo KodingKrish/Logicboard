@@ -1,3 +1,12 @@
-#Update This in Future
+import uvicorn
+from app import app
 
-print("Work in Progress")
+if __name__ == "__main__":
+    uvicorn.run(
+        app,
+        host="127.0.0.1",
+        port=9000,
+        reload=True
+    )
+
+print("__main__ Has been Intialized")
